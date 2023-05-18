@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400&family=Nunito:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+nav img {
+    width: 250px;
+    height: 100px;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+nav a:hover {
+    color: gold;
+    font-weight: bold;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-btn .btn {
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: gold;
+    color: #fff;
+}
+
+.name-tag {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Portfolio_site_bg2.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.name-tag h1 {
+    width: 80%;
+    font-size: 60px;
+    font-family: 'Averia Serif Libre', cursive;
+    text-align: center;
+    color: #fff;
+}
+
+.name-tag hr {
+    border: 1.5px solid gold;
+    border-radius: 3px;
+    width: 60%;
+    margin: 0px auto;
+}
+
+
+/* Dropdown Menu */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 75px;
+    width: 300px;
+    height: 0;
+    background-color: #fff;
+    /* backdrop-filter: blur(15px); */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+
+.dropdown_menu.open {
+    height: auto;    
+}
+
+.dropdown_menu li, .dropdown_menu .nav-btn {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.dropdown_menu .nav-btn .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+h2 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: bold;
+    padding: 0 30px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+p {
+    padding: 0 30px;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.description {
+    padding: 0 30px;
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: auto;
+    gap: 15px;
+    padding: 0 30px;
+    margin-top: 15px;
+}
+
+
+.cards img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 3px;    
+}
+
+.container {
+    padding: 2px 16px;
+    margin: 10px 0;
+}
+
+
+.container h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.container p {
+    background-color: #fff;
+    margin: 0px 7px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.container p:hover {
+    background-color: gold;
+    color: #fff;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+.chart {
+    width: 40%;
+    margin: 80px auto;
+}
+
+nav .toggle_btn {
+    color: gold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle_btn {
+    margin-left: 85px;
+}
+
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: auto;
+    gap: 15px;
+    padding: 0 30px;
+    margin-top: 15px;
+    
+}
+
+.services .first_set, .services .second_set {
+    width: calc(100%/4);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px 0;
+    height: 350px;  
+}
+
+
+.services .first_set i {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.services .second_set i {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+
+}
+
+.services .first_set p, .services .second_set p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* google map styles */
+.location iframe {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 30px;
+    filter: invert(100%);
+    margin-top: 15px;
+}
+
+/* styles for font awesome icons including hover effect - start */
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.socials i {
+    font-size: 100px;
+    margin: 80px 80px 80px 80px;
+    color: #000;
+}
+
+.socials i.fa-envelope:hover {
+    color: gold;
+}
+
+.socials i.fa-mobile:hover {
+    color: gold;
+}
+
+.socials i.fa-github:hover {
+    color: gold;
+}
+
+.socials i.fa-linkedin:hover {
+    color: gold;
+}
+
+.socials i.fa-twitter:hover {
+    color: gold;
+}
+
+.socials i.fa-square-whatsapp:hover {
+    color: gold;
+}
+
+
+.socials .socials_handle .fa-github {
+    color: #333;
+}
+
+
+.socials .socials_handle .fa-envelope {
+    color: #D0412F;
+}
+
+.socials .socials_handle .fa-mobile {
+    color: #022E64;
+}
+
+.socials .socials_handle .fa-linkedin {
+    color: #0e76a8;
+}
+
+.socials .socials_handle .fa-twitter {
+    color: #00acee;
+}
+
+.socials .socials_handle .fa-square-whatsapp {
+    color: #25D366;
+}
+/* styles for font awesome icons including hover effect - end */
+
+.socials .socials_handle a {
+    text-decoration: none;
+}
+
+.contact-me {
+    margin-top: 15px;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    /* margin-bottom: 15px; */
+    width: 100%;
+    background-color: #022e64;
+    color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mobile responsiveness - start */
+@media (max-width: 992px){
+    nav ul, nav .nav-btn {
+        display: none;
+    }
+    nav .nav-btn {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    nav .toggle_btn {
+        display: block;
+    }
+
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .chart {
+        width: 100%;
+        margin: 88px auto;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .services .first_set, .services .second_set {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .socials i {
+       font-size: 30px;
+       margin: 60px 40px;
+    }
+
+    .name-tag h1 {
+        font-size: 49px;
+        font-weight: 500;
+    }
+
+    .name-tag {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .name-tag hr {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px){
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    nav img {
+        width: 180px;
+        height: 80px;
+    }
+
+    .name-tag {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .name-tag hr {
+        width: 86%;
+    }
+
+    .name-tag h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .socials i {
+        font-size: 20px;
+        margin: 30px 18px;
+     }
+
+}
+/* mobile responsiveness - end */
+
+
+
+
