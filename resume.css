@@ -253,6 +253,10 @@ p {
     .content .right_side .objective {
         height: auto;
     }
+
+    .content .right_side .work_experience {
+        height: auto;
+    }
 }
 
 @media (max-width: 576px){
